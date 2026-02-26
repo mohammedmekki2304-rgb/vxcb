@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد | مطور برمجيات ومنصة الأنظمة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #22c55e;
+            --dark-bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* الهيدر والبطل (Hero Section) */
+        header {
+            background: var(--card-bg);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .hero h1 { margin: 0; font-size: 2.8rem; color: var(--primary); }
+        .hero p { font-size: 1.2rem; color: var(--text-dim); max-width: 700px; margin: 10px auto; }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* تنسيق الأقسام */
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        /* شبكة المعلومات والمهارات */
+        .grid-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover { transform: translateY(-5px); }
+
+        .info-card h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+            border: 1px solid var(--primary);
+        }
+
+        /* قسم GitHub Stats */
+        .stats-container {
+            text-align: center;
+            margin: 40px 0;
+            background: rgba(255,255,255,0.02);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .github-stats {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* قسم منصة الأنظمة الوهمية (المشروع) */
+        .vm-section {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid var(--primary);
+        }
+
+        .vm-card {
+            background: #0f172a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px dashed var(--primary);
+            display: inline-block;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        button {
+            padding: 15px 35px;
+            background: var(--primary);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background: #16a34a;
+        }
+
+        iframe {
+            margin-top: 30px;
+            width: 100%;
+            height: 650px;
+            border: 4px solid var(--primary);
+            border-radius: 12px;
+            display: none; /* يظهر عند التشغيل فقط */
+            background: #000;
+        }
+
+        /* الفوتر والتواصل */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-dim);
+            border-top: 1px solid #334155;
+            margin-top: 50px;
+        }
+
+        .contact-links a {
+            color: var(--primary);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            iframe { height: 400px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>أنا محمد 👋</h1>
+    <p>مطور شغوف بإنشاء حلول برمجية نظيفة وفعّالة. أرحب بك في مساحتي الرقمية حيث أعرض مشاريعي وأتعلم باستمرار.</p>
+</header>
+
+<div class="container">
+    
+    <div class="grid-info">
+        <div class="info-card">
+            <h2>🚀 عني | About Me</h2>
+            <p>أنا مطور ملتزم بحل المشاكل وكتابة أكواد عالية الجودة. أؤمن بأهمية التوثيق الجيد والمشاريع ذات التأثير الحقيقي.</p>
+            <p style="font-style: italic; color: var(--text-dim);">"البرمجة هي شعر كتب للآلات، لكنه مصنوع للبشر"</p>
+        </div>
+
+        <div class="info-card">
+            <h2>💻 المهارات التقنية</h2>
+            <div>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-container">
+        <h2 class="section-title">📊 نشاطي على GitHub</h2>
+        <img class="github-stats" src="https://github-readme-stats.vercel.app/api?username=mohammedmekki2304-rgb&show_icons=true&theme=radical" alt="GitHub Stats">
+    </div>
+
+    <div class="vm-section" id="lab">
+        <h2 class="section-title">🖥️ مختبر الأنظمة الوهمية</h2>
+        <p>مشروع تجريبي يتيح لك تجربة نظام تشغيل كامل داخل متصفحك مباشرة.</p>
+        
+        <div class="vm-card">
+            <h3>Windows 11 VM</h3>
+            <p style="color: var(--text-dim); margin-bottom: 20px;">بيئة سحابية وهمية سريعة</p>
+            <button onclick="startVM()">تشغيل النظام (Windows 11)</button>
+        </div>
+
+        <iframe id="vmScreen" title="Virtual Machine Platform"></iframe>
+    </div>
+
+</div>
+
+<footer>
+    <div class="contact-links">
+        <p>🤝 دعونا نتواصل:</p>
+        <a href="mailto:your.email@example.com">البريد الإلكتروني</a> | 
+        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> | 
+        <a href="https://github.com/mohammedmekki2304-rgb">GitHub</a>
+    </div>
+    <p style="margin-top: 20px;">تم التحديث في فبراير 2026 | صنع بواسطة محمد ✨</p>
+</footer>
+
+<script>
+function startVM() {
+    const vm = document.getElementById("vmScreen");
+    // إظهار الشاشة
+    vm.style.display = "block";
+    // رابط محاكاة ويندوز 11 حقيقي وشغال
+    vm.src = "https://win11.blueedge.me/"; 
+    
+    // تمرير تلقائي للشاشة لرؤية النظام
+    vm.scrollIntoView({ behavior: 'smooth' });
+    
+    alert("جاري الاتصال بالنظام الوهمي... يرجى الانتظار ثواني للتحميل.");
+}
+</script>
+
+</body>
+</html>
